@@ -9,7 +9,7 @@ DATA segment
 DATA ends
 
 CODE segment
-mov cl, size         ; Loop instruction reduces value in CX register after every iteration
+mov cl, size         ; Loop instruction reduces value in CX register after every iteration. Hence, counter value has to be set in CX
 
 GENERATE:
     mov bx, cx           ; Storing loop counter value of CX in BX register
